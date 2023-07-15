@@ -1,0 +1,252 @@
+#top {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar {
+    background-color: hsl(210, 8%, 25%);
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar img {
+    width: 130px;
+    margin-top: 9px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.navbar .navbar-contents {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.navbar-contents a {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+    display: inline-block;
+}
+
+.navbar-contents a:hover {
+    color: rgb(105, 216, 222);
+    box-shadow: 2px 2px 2px black;
+}
+
+.navbar .navbar-right-contents .contact-us {
+    display: inline-block;
+    position: absolute;
+    right: 115px;
+    top: 15px;
+}
+
+.navbar .navbar-right-contents .contact-us a {
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar .navbar-right-contents .contact-us a:hover{
+    color: rgb(105, 216, 222);
+    box-shadow: 2px 2px 2px black;
+}
+
+.navbar button {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    background-color: hsl(210, 8%, 25%);
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar button:hover{
+    color: rgb(105, 216, 222);
+    box-shadow: 2px 2px 2px black;
+}
+
+#supportForm {
+    color: rgb(105, 216, 222);
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+#supportForm .supportFormHeading {
+    text-align: center;
+    font-size: 40px;
+}
+
+#supportForm form {
+    background-color: hsl(210, 8%, 30%);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+#supportForm form input {
+    background-color: rgb(221, 228, 235);
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+
+#supportForm form textarea {
+    background-color: rgb(221, 228, 235);
+    border-radius: 7px;
+}
+
+#supportForm .submitBtn {
+    cursor: pointer;
+}
+#closeBtn:hover{
+    background-color: red;
+}
+
+#supportForm .submitBtn:hover {
+    background-color: gray;
+    box-shadow: 2px 2px 2px black;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 20px;
+    box-shadow: 5px 5px 10px hsl(210, 8%, 25%);
+}
+
+.main-content h1 {
+    font-size: 37px;
+    font-family: fantasy;
+}
+
+h2 {
+    background-color: rgb(105, 216, 222);
+    padding-left: 8px;
+}
+
+.main-content img {
+    width: 350px;
+    position: relative;
+}
+
+.main-content .discription {
+    display: inline-block;
+    width: 75%;
+}
+
+.main-content .about {
+    font-size: 17px;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.main-content .price {
+    font-size: 30px;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+footer {
+    background-color: hsl(210, 8%, 25%);
+    color: rgb(105, 216, 222);
+    font-size: 17px;
+}
+
+footer .footer {
+    display: flex;
+}
+
+footer .footerLeft {
+    flex: 1;
+}
+
+footer .footerRight .footerAboutPara {
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+footer img {
+    display: block;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 7px;
+}
+
+footer .footerCenter {
+    text-align: center;
+    color: gray;
+}
+
+@media (max-width:930px) {
+    .navbar button{
+        top: 60px;
+    }
+    .navbar .navbar-right-contents .contact-us{
+        top: 60px;
+    }
+    .navbar{
+        height: 100px;
+    }
+}
+@media(max-width:745px){
+    #footer img{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:720px) {
+    .navbar {
+        height: 150px;
+    }
+    .navbar button{
+        top: 104px;
+    }
+    .navbar .navbar-right-contents .contact-us{
+        top: 105px;
+    }
+}
+
+@media(max-width:586px) {
+    .navbar {
+        height: 150px;
+    }
+}
+
+@media(max-width:445px) {
+    #footer .footer .footerRight .footerAboutPara{
+        width: 100px;
+    }
+}
+@media(max-width:401px) {
+    .navbar .navbar-right-contents .contact-us{
+        top: 150px;
+    }
+    .navbar button{
+        top: 149px;
+    }
+    .navbar{
+        height: 200px;
+    }
+}
